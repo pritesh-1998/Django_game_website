@@ -9,23 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Vidly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-    <!-- Background image -->
-    <!-- Image and text -->
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2>
-                    <small>Pritesh Collection</small>
-                </h2>
-            </a>
-        </div>
-    </nav>
-    <!-- Background image -->
-
-    <!-- Background image -->
     <style>
         .page-holder {
             min-height: 100vh;
@@ -45,31 +28,93 @@
         /* Create three equal columns that sits next to each other */
         
         .column {
-            flex: 33.33%;
+            flex: 13.33%;
             padding: 20px;
         }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 6px;
+        }
+        
+        .nav-wrapper {
+            background-color: #212529 !important;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 80px;
+            margin-bottom: 30px;
+        }
+        
+        .fixed-bg {
+            background-image: url("https://i.ibb.co/vZHYJM4/futuristic-world-qu.jpg");
+            min-height: 600px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
-    <div style="background: url(https://wallpaperbat.com/img/249818-download-hd-gaming-wallpaper-hd-background-download-t.jpg)" class="page-holder bg-cover">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADS0lEQVRoge2YQWgcVRzGf/+3SUp2nZ3dtBINaI89KAgN1rrdpEgKnjxUafFSL/bWu4ReqhVPCkUQT/XQeuktgqdEtNBMUgP1YILQQy+m7DZFye7MNtRtsvP3MLM1BOpuZibuEucHC7uz833v+5id92YfpKSkpKT0AIkjrjmFdw18BfpizBgPRLmQn6jPRHaIKqzP2+Mi3AYGo3rsYAvVsj3hLSXk15nqnbGs69h3XcdW18lfievnOvkrgZd9t3pnLBvFw0QR5f7a+AI4orCS97zpKB7byXvetMIKcCTX3Pg8iocA6G8Muev2pyJybhe/92bLN8dGJmvLUQbeSW2+8JoRXQIOdKfQqiDXraJ7SV7hiQFo1O3LInzUbQmFiqg5k1QJgOJE/VdRcwa02p1CxhSmGzX746eHXCdfcR1bvUWrlFSwvca7ZZ0I79EKPL1HZAwgX2os9i7a7shPNhaCd0H2SDd7P5IW6Tf2TZGBuAa1hcJh4+s3CMeB2y3MhyPl2mrSmk7EviJhoCkgB5zK4F/dC01Hz7gGCG/sOHJ8TzQdSOIe+bnD56Q0/0rsIr7IeeAH4BEw18Kc3wtNV4SP0JqI2X/I9tz7ZvpNi/QbsRZE1yk4qA4+kcFTz5f/bETx+MM5ZA2x+SOK2hPuzmm5a2JeEc0iHBvSzZm12dHcbtVrs6O5Id2cAV5H4m1ixCti9CzIA4Sp4WxzzluyDnYr9W5ah4azzblghddq4BUjShyxXfLuYfxJYBXRkm7KsjdfOK367G0mVaS+YL+ng5llREvAKoaTdsm7FyeLQDAfA9hlN9I+17pTfDmDfwN4Mzz0CyrfZjLyU9PI7wAHfD3c8nUK0XMoR4NWsrjlm/cPnly/H2Xc7bljP/0CjJRrq3qTSW+gcAHRi8A4ouMtXxnwg3Na7ZODZfchop/lq+7Xcvafr+KQSBEAeYstqH+5Njt6dfi5x++gchrkVdCXwjPug64g+t3jR8Pfv/D2w42kxoYEi7QJA94IX8/AS3rY/bMgpkX6jf1WJNhv9W5ZJ3oZZje0sypUIJy1BLmuMK3GOK5j9zJf17T/BRq4BmERq+heatRsFP2gvZfa7yhUDFyziu4nvc6SkpKS8j/mbzm5QL0m8sWkAAAAAElFTkSuQmCC">
+</head>
+
+<body>
+
+    <!-- Background image -->
+    <nav>
+        <div class="nav-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f1c40f"><path d="M58.48,24.08c-2.81651,0 -4.78677,1.69589 -6.21485,3.31234c-1.42807,1.61645 -2.56077,3.45606 -3.64156,5.18016c-1.0808,1.7241 -2.11558,3.33125 -2.95625,4.3c-0.84068,0.96875 -1.24516,0.9675 -0.94735,0.9675h-30.96c-5.66077,0 -10.32,4.66306 -10.32,10.32v89.44c0,5.65694 4.65923,10.32 10.32,10.32h144.48c5.65902,0 10.32,-4.66098 10.32,-10.32v-89.44c0,-5.65902 -4.66098,-10.32 -10.32,-10.32h-30.96c0.2978,0 -0.10667,0.00125 -0.94735,-0.9675c-0.84067,-0.96875 -1.87545,-2.5759 -2.95625,-4.3c-1.08079,-1.7241 -2.21349,-3.5637 -3.64156,-5.18016c-1.42807,-1.61645 -3.39833,-3.31234 -6.21485,-3.31234zM58.48,30.96h55.04c-0.20898,0 0.21032,0.02411 1.06156,0.98766c0.85125,0.96355 1.88731,2.56394 2.96297,4.27984c1.07566,1.7159 2.18958,3.54875 3.58781,5.16c1.39823,1.61125 3.32316,3.3325 6.14765,3.3325h30.96c1.9365,0 3.44,1.5035 3.44,3.44v89.44c0,1.9365 -1.5035,3.44 -3.44,3.44h-144.48c-1.94163,0 -3.44,-1.50142 -3.44,-3.44v-89.44c0,-1.93858 1.49837,-3.44 3.44,-3.44h30.96c2.82449,0 4.74943,-1.72125 6.14765,-3.3325c1.39823,-1.61125 2.51216,-3.4441 3.58781,-5.16c1.07566,-1.7159 2.11172,-3.3163 2.96297,-4.27984c0.85126,-0.96355 1.27056,-0.98766 1.06156,-0.98766zM63.64,65.36c-4.74965,0 -8.6,3.85035 -8.6,8.6c0,4.74965 3.85035,8.6 8.6,8.6c4.74965,0 8.6,-3.85035 8.6,-8.6c0,-4.74965 -3.85035,-8.6 -8.6,-8.6zM108.36,65.36c-4.74965,0 -8.6,3.85035 -8.6,8.6c0,4.74965 3.85035,8.6 8.6,8.6c4.74965,0 8.6,-3.85035 8.6,-8.6c0,-4.74965 -3.85035,-8.6 -8.6,-8.6zM117.04735,96.22594c-1.17822,-0.00775 -2.27846,0.588 -2.91594,1.57891c0,0 -11.15123,15.71515 -28.1314,15.71515c-16.98018,0 -28.1314,-15.71515 -28.1314,-15.71515c-0.65265,-0.97448 -1.75678,-1.54933 -2.92938,-1.52516c-1.27422,0.02755 -2.42881,0.75729 -3.00048,1.89641c-0.57167,1.13912 -0.46675,2.50095 0.27267,3.53906c0,0 12.66733,18.68485 33.7886,18.68485c21.12126,0 33.7886,-18.68485 33.7886,-18.68485c0.77164,-1.0408 0.8931,-2.42686 0.31424,-3.58601c-0.57886,-1.15914 -1.75987,-1.89477 -3.05549,-1.90321z"></path></g></g>
+           </svg>
+            <a href="" class="brand-logo">&nbsp Pritesh Collection</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="https://www.instagram.com/_pritesh1998/" class="fa fa-instagram fa-2x"></a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=plathia1998@gmail.com&tf=1" class="fa fa-google fa-2x"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/pritesh.lathia.1" class="fa fa-facebook fa-2x"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="fixed-bg"></div> -->
+    <div style="background: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/179485824/original/72747d6da357866c22d9225e5db5d056fd182441/design-high-quality-clean-and-gaming-wallpapers-of-your-name.png)" class="page-holder bg-cover">
         <div class="container py-5">
             <header class="text-center text-white py-5">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/hDGQdYz/Logo-500x500-px-1.png" alt="Logo-500x500-px-1" border="0"></a> bv
                 <h1 class="display-4 font-weight-bold mb-4">Games don't make you violent, lag does</h1>
                 <p class="lead mb-0">
                     <b>Download free Pc Games and Movies from Gdrive</b></p>
                 <br> {% block content %} {% endblock %}
             </header>
             <main class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="column">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/516FQffmq9L.jpg" alt="Snow" style="width:100%" height="100%">
+                        <img src="https://m.media-amazon.com/images/M/MV5BM2EzNmU3NGYtYTcyMy00M2M1LTkyMGUtYjFlNGE0OTFmYmMxXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg" alt="Snow" style="width:100%" height="100%">
                     </div>
                     <div class="column">
-                        <img src="https://i.pinimg.com/originals/ec/3c/17/ec3c17316424a67fc289c116b4538f8c.jpg" alt="Forest" style="width:100%">
+                        <img src="https://cdn.shopify.com/s/files/1/0747/3829/products/mL3734_1024x1024.jpg?v=1571445752" alt="Forest" style="width:100%">
                     </div>
                     <div class="column">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArIW9yoyTkpSR9Lma6yHeOAvD3XVAuLhjNqpqUq5yW7vXIo0kKizkxjojNWDEAbIS5wo&usqp=CAU  " alt="Mountains" style="width:100%" height="100%">
                     </div>
                     <div class="column">
-                        <img src="https://www.britishvintageposters.co.uk/ekmps/shops/6d7106/images/player-unknown-s-pub-g-battlegrounds-game-poster-1700-p.jpg" alt="Snow" style="width:100%" height="100%">
+                        <img src="https://i.pinimg.com/originals/46/de/29/46de29594fc638111b174f18695e736f.png" alt="Snow" style="width:100%" height="100%">
                     </div>
                     <div class="column">
                         <img src="https://m.media-amazon.com/images/I/51MFu2e82VL.jpg" alt="Forest" style="width:100%">
@@ -77,8 +122,7 @@
                     <div class="column">
                         <img src="https://i.pinimg.com/736x/39/94/81/399481b2b73faa0149afd587846261f1.jpg" alt="Mountains" style="width:100%" height="100%">
                     </div>
-                </div>
-                <br>
+                </div> -->
                 <br>
             </main>
 

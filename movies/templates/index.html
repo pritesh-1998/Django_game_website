@@ -1,7 +1,28 @@
-{% extends 'base.html' %} {% block content %}
-<!-- zencoding -->
-<table class="table table-striped table-bordered table-hover">
-    <thead>
+{% extends 'tmp_navbar.html' %}
+
+{% block content %}
+
+<body>
+</body>
+<style>
+    table {
+        border-collapse: collapse;
+      }
+      
+      
+      td, th {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+      }
+      
+
+</style>
+<body>
+<br>
+
+<table class="table table-striped .table-bordered table-hover" style='font-family:"Courier New", Bold,Courier, monospace; font-size:180%; background-color:rgba(0, 0, 0, 0);'>
+    <thead class="table-dark">
         <tr>
             <th>Title</th>
             <th>Genre</th>
@@ -11,7 +32,7 @@
     </thead>
     <tbody>
         {% for movie in movies %}
-        <tr>
+        <tr class>
             <td>
             {% comment %} <a href="/movies/{{movie.id}}">{{ movie.title }}</a> {% endcomment %}
             <a href="{% url 'movies_details' movie.id %  }">{{ movie.title }}</a>
@@ -23,4 +44,45 @@
         {% endfor %}
     </tbody>
 </table>
-{% endblock %}
+<!-- <div class="container">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://flxt.tmsimg.com/assets/p192847_p_v10_af.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://flxt.tmsimg.com/assets/p192847_p_v10_af.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://flxt.tmsimg.com/assets/p192847_p_v10_af.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://flxt.tmsimg.com/assets/p192847_p_v10_af.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+ 
+<!-- zencoding -->
+{% endblock %}  
