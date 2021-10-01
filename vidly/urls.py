@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/',include('movies.urls')),
     path('api/',include(movie_resource.urls)),
+    path('games/',include('games.urls')),
     path('',views.home)
 ]
