@@ -1,4 +1,4 @@
-# Gamming Downloading website
+# Gamme Downloading website
 #### steps to run the code:-
 > 1) git clone https://github.com/pritesh-1998/Django_game_website.git
 > 2) open that folder in your code editor
